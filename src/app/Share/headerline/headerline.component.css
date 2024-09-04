@@ -1,0 +1,9 @@
+.headerline{
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #795548;
+    gap: 10px;
+}

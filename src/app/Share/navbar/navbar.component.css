@@ -1,0 +1,11 @@
+.navbar-brand{
+    display: flex;
+    margin-left: 2rem;
+}
+.container{
+    display: flex;
+    justify-content: flex-start;
+}
+.bg-body-tertiary{
+    background-color: rgb(219 228 237) !important;
+}

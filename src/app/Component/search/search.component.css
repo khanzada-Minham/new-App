@@ -1,0 +1,27 @@
+.search-product-input{
+    width: 40%;
+    padding: 8px;
+    border: 1px solid #c4c4c4;
+    background-color: rgb(214, 214, 214);
+    border-radius: 5px;
+}
+.search-product-button{
+    padding: 10px;
+    width: 8%;
+    border: 1px solid #d6d6d6;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.search-result{
+    font-family: sans-serif;
+    margin-top: 2rem;
+    padding-left: 10%;
+}
+.search-product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
