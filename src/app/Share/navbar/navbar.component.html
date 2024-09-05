@@ -1,6 +1,6 @@
 <app-headerline></app-headerline>
 <nav class="navbar bg-body-tertiary">
     <div class="container">
-      <a class="navbar-brand" [href]="item" *ngFor="let item of navbar">{{item}}</a>
+      <a class="navbar-brand" [routerLink]="item" [href]="item" *ngFor="let item of navbar">{{item}}</a>
     </div>
   </nav>

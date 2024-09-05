@@ -7,6 +7,9 @@ import { SearchComponent } from './Component/search/search.component';
 import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from './Share/navbar/navbar.component';
 import { HeaderlineComponent } from './Share/headerline/headerline.component';
+import { ProductsListComponent } from './Component/products/products-list/products-list.component';
+import { FilterProductComponent } from './Component/products/filter-product/filter-product.component';
+import { ProductDetailsComponent } from './Component/product-details/product-details.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { HeaderlineComponent } from './Share/headerline/headerline.component';
     ProductsComponent,
     SearchComponent,
     NavbarComponent,
-    HeaderlineComponent
+    HeaderlineComponent,
+    ProductsListComponent,
+    FilterProductComponent,
+    ProductDetailsComponent
   ],
   imports: [
     BrowserModule,

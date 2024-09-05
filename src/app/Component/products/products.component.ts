@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Output } from '@angular/core';
+import { Product } from '../../../Models/Products';
 
 @Component({
   selector: 'app-products',
@@ -6,6 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './products.component.css'
 })
 export class ProductsComponent {
+
+
+  selectedProduct:Product;
   
   products = [
     {
@@ -533,4 +537,25 @@ export class ProductsComponent {
       slug: "michael-feburary-sk8-hi"
     }
   ];
+  @Output()
+  searchInput:string = '';
+
+  all = this.products.length;
+
+  InStock = this.products.filter((value)=>{
+   return value.is_in_inventory === true
+  }).length
+
+  OutOfStock = this.products.filter((value)=>{
+   return value.is_in_inventory === false
+  }).length
+
+  selectRedioButton: string = 'all'
+
+  changeEvent(value : string){
+    this.selectRedioButton = value;
+  }
+
+
+  
 }

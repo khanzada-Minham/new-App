@@ -1,0 +1,13 @@
+<div class="filter">
+
+    <p>Filter:</p>
+    <input type="radio" name="filter" value="all" [(ngModel)]="selectRedioButton" (change)="onChangeFilterButton()">
+    <p>{{'All ('+ all +')'}}</p>
+
+    <input type="radio" name="filter" value="true" [(ngModel)]="selectRedioButton" (change)="onChangeFilterButton()">
+    <p>{{'In Stock ('+ InStock +')'}}</p>
+    
+    <input type="radio"  name="filter"value="false" [(ngModel)]="selectRedioButton" (change)="onChangeFilterButton()">
+    <p>{{'Out Of Stock ('+ OutOfStock +')'}}</p>
+
+</div>
