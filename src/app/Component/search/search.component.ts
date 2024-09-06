@@ -9,10 +9,13 @@ export class SearchComponent {
 
   searchText:string = "";
   @Output()
+  
   searchEvent: EventEmitter<string> = new EventEmitter<string>();
 
-  clickSearchButton(HTMLInput:HTMLInputElement){
+  clickSearchButton(HTMLInput:any){
     this.searchText = HTMLInput.value;
+    console.log('this.searchText',this.searchText);
     this.searchEvent.emit(this.searchText);
   }
+
 }

@@ -1,6 +1,6 @@
 <div class="search-product" >
     <input type="text" class="search-product-input" placeholder="Search Products" #value >
-    <button class="btnSearch" (click)="clickSearchButton(value)">Search</button>
+    <button (searchEvent)="clickSearchButton($event)" class="btnSearch" (click)="clickSearchButton(value)">Search</button>
 </div>
 <div class="container">
     <div class="search-result">

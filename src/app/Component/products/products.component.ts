@@ -1,5 +1,7 @@
-import { Component, Output } from '@angular/core';
+import { Component, Output,EventEmitter, Input } from '@angular/core';
 import { Product } from '../../../Models/Products';
+import { HtmlParser } from '@angular/compiler';
+
 
 @Component({
   selector: 'app-products',
@@ -7,7 +9,6 @@ import { Product } from '../../../Models/Products';
   styleUrl: './products.component.css'
 })
 export class ProductsComponent {
-
 
   selectedProduct:Product;
   
@@ -556,6 +557,18 @@ export class ProductsComponent {
     this.selectRedioButton = value;
   }
 
+  @Input()
+  searchInputChange: EventEmitter<string> = new EventEmitter<string>();
+  SearchFilterValue:any
 
+  onSearchProduct(HTMLEvent:any){
+    this.searchInput = HTMLEvent;
+     this.SearchFilterValue =  this.products.filter((value)=>{
+      return value.name.toLowerCase().includes(this.searchInput.toLowerCase())
+    })
+    console.log('Search',this.SearchFilterValue);
+    
+    this.searchInputChange.emit(this.SearchFilterValue)
+  }
   
 }
