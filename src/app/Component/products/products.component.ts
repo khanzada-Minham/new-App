@@ -572,5 +572,4 @@ export class ProductsComponent {
 
   @ViewChild('ProductsComponent') productCompunent:ProductsComponent
 
-  
 }

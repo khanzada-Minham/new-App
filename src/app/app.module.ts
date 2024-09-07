@@ -10,6 +10,7 @@ import { HeaderlineComponent } from './Share/headerline/headerline.component';
 import { ProductsListComponent } from './Component/products/products-list/products-list.component';
 import { FilterProductComponent } from './Component/products/filter-product/filter-product.component';
 import { ProductDetailsComponent } from './Component/product-details/product-details.component';
+import { ProductBrandsComponent } from './Component/products/products-list/product-brands/product-brands.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ProductDetailsComponent } from './Component/product-details/product-det
     HeaderlineComponent,
     ProductsListComponent,
     FilterProductComponent,
-    ProductDetailsComponent
+    ProductDetailsComponent,
+    ProductBrandsComponent
   ],
   imports: [
     BrowserModule,

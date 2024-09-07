@@ -6,4 +6,21 @@
             <app-products-list  [product]="prod" *ngIf="selectRedioButton === 'all' || prod.is_in_inventory.toString() === selectRedioButton" (click)="selectedProduct = prod" ></app-products-list>
         </ng-container>
     </div>
+    <div class="feacher-product">
+        <div class="feacher-product-heading">
+            <h1>Latest Arrival in Pupolar Brands</h1>
+        </div>
+        <app-product-brands>
+            <h3 class="title">New Arrivals in Nike</h3>
+            <button class="action-button">Show New Arrivals Nike</button>
+        </app-product-brands>
+        <app-product-brands>
+            <h3 class="title">New Arrivals in Adidas</h3>
+            <button class="action-button">Show New Arrivals Adidas</button>
+        </app-product-brands>
+        <app-product-brands>
+            <h3 class="title">New Arrivals in Puma</h3>
+            <button class="action-button">Show New Arrivals Puma</button>
+        </app-product-brands>
+    </div>
 </div>

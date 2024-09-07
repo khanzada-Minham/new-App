@@ -7,3 +7,33 @@
     margin-right: calc(-.5* var(--bs-gutter-x));
     margin-left: calc(-.5* var(--bs-gutter-x));
 }
+.feacher-product{
+    display: flex;
+    background-color: #28282B;
+    padding: 20px 10px;
+}
+.feacher-product-heading{
+    color: #fff;
+    padding: 20px 30px;
+    margin: 10px 10px;
+    width: 320px;
+}
+
+
+.feacher-product-item{
+    width: 270px;
+    padding: 20px 30px;
+    margin: 10px 10px;
+    background-color: #fff;
+    color: black;
+}
+
+.action-button , .discription , .title{
+    margin: 10px 0px;
+}
+.action-button{
+    width: 100%;
+    padding: 10px 0px;
+    background-color: #28282B;
+    color: #fff;
+}
