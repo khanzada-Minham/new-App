@@ -1,5 +1,5 @@
 <app-navbar  ></app-navbar>
 <app-products #ProductsComponent ></app-products>
-<app-product-details *ngIf="ProductsComponent.selectedProduct"></app-product-details>
+<app-product-details *ngIf="ProductsComponent.selectedProduct" [product]="ProductsComponent"></app-product-details>
 
 <router-outlet></router-outlet>

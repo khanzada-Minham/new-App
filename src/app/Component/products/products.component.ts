@@ -1,6 +1,5 @@
-import { Component, Output,EventEmitter, Input } from '@angular/core';
+import { Component, Output,EventEmitter, Input, ViewChild } from '@angular/core';
 import { Product } from '../../../Models/Products';
-import { HtmlParser } from '@angular/compiler';
 
 
 @Component({
@@ -570,5 +569,8 @@ export class ProductsComponent {
     
     this.searchInputChange.emit(this.SearchFilterValue)
   }
+
+  @ViewChild('ProductsComponent') productCompunent:ProductsComponent
+
   
 }
