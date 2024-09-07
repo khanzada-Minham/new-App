@@ -2,9 +2,8 @@
 <div class="container">
     <app-filter-product [all]="all" [InStock]="InStock" [OutOfStock]="OutOfStock" (selectFilterRedioButton)="changeEvent($event)"></app-filter-product>
     <div class="rowcss">
-        <div *ngFor="let prod of products" (click)="selectedProduct = prod" >
-            <app-products-list  [product]="prod" *ngIf="selectRedioButton === 'all' || prod.is_in_inventory.toString() === selectRedioButton"  ></app-products-list>
-           
-        </div>
+        <ng-container *ngFor="let prod of products"  >
+            <app-products-list  [product]="prod" *ngIf="selectRedioButton === 'all' || prod.is_in_inventory.toString() === selectRedioButton" (click)="selectedProduct = prod" ></app-products-list>
+        </ng-container>
     </div>
 </div>
